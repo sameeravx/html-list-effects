@@ -1,0 +1,57 @@
+<!--
+Author: Sameera Liyanage
+Author URL: https://sameeravx.github.io
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sameera Liyanage">
+  <title>Effects for List Item - Sameera Liyanage</title>  
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles-1.css" />  
+  <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <a href="index.html" class="tutorial-link">Home</a>
+    <nav class="demo-nav">
+      <ul>
+        <li><a href="index.html" class="active">Effect 1</a></li>
+        <li><a href="index-2.html">Effect 2</a></li>
+        <li><a href="index-3.html">Effect 3</a></li>
+        <li><a href="index-4.html">Effect 4</a></li>
+        <li><a href="index-5.html">Effect 5</a></li>
+        <li><a href="index-6.html">Effect 6</a></li>
+        <li><a href="#" onclick="localStorage.clear(); location.reload(); return false;">Clear All</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="demo-wrapper">
+    <header>
+        <h1>Add or Remove List Items</h1>
+    </header>
+    <div class="notification undo-button">Item Deleted. Undo?</div>
+    <div class="notification save-notification">Item Saved</div>
+    <div class="reminder-container">
+      <form id="input-form">
+        <input type="text" id="text" placeholder="Remind me to.."/>
+        <input type="submit" value="Add" />
+      </form>
+      <ul class="reminders">
+      </ul>
+      <footer>
+        <span class="count"></span>
+        <button class="clear-all">Delete All</button>
+      </footer>
+    </div>
+  </div><!--end demo-wrapper-->
+
+  <script src="js/jquery-1.8.2.min.js"></script>
+  <script src="js/modernizr-1.5.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
